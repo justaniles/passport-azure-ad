@@ -62,7 +62,7 @@ testStrategy.configure = function(identifier, done) {
 
 // Mock `setOptions`
 // `setOptions` is used to read and save the metadata, we don't need this in test 
-testStrategy.setOptions = function(options, metadata, next) { return next();};
+testStrategy.setOptions = function(options, metadata, cachekey, next) { return next();};
 
 
 describe('OIDCStrategy error handling', function() {
